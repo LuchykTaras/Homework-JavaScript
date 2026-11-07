@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Palette & Form Validation</title>
+  <link rel="stylesheet" href="cookie.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Create new color</h2>
+
+    <div class="form-group">
+      <div class="label-row">
+        <label for="colorName">Color:</label>
+        <span class="error-msg" id="nameError"></span>
+      </div>
+      <input type="text" id="colorName">
+    </div>
+
+    <div class="form-group">
+      <div class="label-row">
+        <label for="colorType">Type:</label>
+      </div>
+      <select id="colorType">
+        <option value="RGB">RGB</option>
+        <option value="RGBA">RGBA</option>
+        <option value="HEX">HEX</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <div class="label-row">
+        <label for="colorCode">Code:</label>
+        <span class="error-msg" id="codeError"></span>
+      </div>
+      <input type="text" id="colorCode">
+    </div>
+
+    <button id="saveBtn">Save</button>
+  </div>
+
+  <h2>All colors</h2>
+  <div class="palette-container" id="palette"></div>
+
+  <script src="cookie.js"></script>
+</body>
+</html>
